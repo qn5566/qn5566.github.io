@@ -37,8 +37,10 @@ if($data_1 && $data_2){
 
             for($j=0;$j < count($data_home_jp[$i]);$j++){
 
-                if ((count(explode(strtoupper($merge['title']), strtoupper($data_home_jp[$i][$j]['title']))) > 1) ||
-                    (count(explode(strtoupper($merge['1']['game']), strtoupper($data_home_jp[$i][$j]['title']))) > 1)) {
+//                echo '日文遊戲:'.$data_home_jp[$i][$j]['title'];
+
+
+                if (count(explode(strtoupper($merge['1']['game_en']), strtoupper($data_home_jp[$i][$j]['title']))) > 1) {
 
 //                    echo '$money[1]game]:'.$money['1']['game'].'<br>';
 //                    echo 'game $data_home_jp:'.$data_home_jp[$i][$j]['title'].' conut'.count(explode(strtoupper($money['title']), strtoupper($data_home_jp[$i][$j]['title']))).'<br>';
@@ -50,7 +52,7 @@ if($data_1 && $data_2){
                     break;
                 }else{
 
-                    if($i == (count($data_home_jp)-1) && $j == (count($data_home_jp[$i])-1)){
+                    if($i == (count($data_home_jp)-2) && $j == (count($data_home_jp[$i])-1)){
                         array_push($merge,  initNintendo_jp());
                         break;
                     }
@@ -58,8 +60,9 @@ if($data_1 && $data_2){
 
             }
 
+
         }
-        echo '$money[2][\'title\']:'.$merge[2]['title'].'<br>';
+//        echo '$money[2][\'title\']:'.$merge[2]['title'].'<br>';
         echo '$data 數量:'.count($data).'<br>';
             array_push($data, $merge);
 
