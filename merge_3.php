@@ -7,8 +7,8 @@
  */
 //ini_set("display_errors", 1);
 ini_set('memory_limit', '-1');
-$dir = '/Users/hey_j/Documents/GitHub/qn5566.github.io/data/merge_data_2.txt';
-$dir_merge = '/Users/hey_j/Documents/GitHub/qn5566.github.io/data/merge_data.txt';
+$dir = '/Users/hey_j/Documents/GitHub/qn5566.github.io/data/merge_data_3.txt';
+$dir_merge = '/Users/hey_j/Documents/GitHub/qn5566.github.io/data/merge_data_2.txt';
 $dir_home_jp = '/Users/hey_j/Documents/GitHub/qn5566.github.io/data/nintendo_home_jp.txt';
 
 $data_1 = file_get_contents($dir_merge);
@@ -30,7 +30,12 @@ if($data_1 && $data_2){
 
 
 
-    foreach($data_merge as $merge){
+    $merge = $data_merge;
+
+//    foreach($data_merge as $merge){
+
+
+    for($z = count($merge)/2 ; $z < count($merge) ; $z ++){
 
 
         for($i = 0; $i < count($data_home_jp);$i++) {
@@ -44,7 +49,7 @@ if($data_1 && $data_2){
 //                    echo '$merge[\'1\'][\'game_en\']:'.$merge['1']['game_en'].'<br>';
 //                }
 
-                if((count(explode(strtoupper($merge['1']['game_en']), strtoupper($data_home_jp[$i][$j]['title']))) > 1)){
+                if((count(explode(strtoupper($merge[$z]['1']['game_en']), strtoupper($data_home_jp[$i][$j]['title']))) > 1)){
 
 
 //                    echo '$money[1]game]:'.$money['1']['game'].'<br>';
@@ -52,13 +57,13 @@ if($data_1 && $data_2){
 
                     $nintendo_jp['title'] = $data_home_jp[$i][$j]['title'];
                     $nintendo_jp['iurl'] = 'https://img-eshop.cdn.nintendo.net/i/'.$data_home_jp[$i][$j]['iurl'].'.jpg?w=284';
-                    array_push($merge, $nintendo_jp);
+                    array_push($merge[$z], $nintendo_jp);
 
                     break;
                 }else{
 
                     if($i == (count($data_home_jp)-2) && $j == (count($data_home_jp[$i])-1)){
-                        array_push($merge,  initNintendo_jp());
+                        array_push($merge[$z],  initNintendo_jp());
                         break;
                     }
                 }
@@ -69,7 +74,7 @@ if($data_1 && $data_2){
         }
 //        echo '$money[2][\'title\']:'.$merge[2]['title'].'<br>';
         echo '$data 數量:'.count($data).'<br>';
-            array_push($data, $merge);
+            array_push($data, $merge[$z]);
 
 
     }
