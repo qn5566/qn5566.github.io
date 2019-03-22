@@ -32,17 +32,26 @@ if($data_1 && $data_2){
 
     foreach($data_merge as $merge){
 
-
+        $save_1 = "0";
         for($i = 0; $i < count($data_home_jp);$i++) {
 
             for($j=0;$j < count($data_home_jp[$i]);$j++){
 
 //                echo '日文遊戲:'.$data_home_jp[$i][$j]['title'].'<br>';
-//                if($data_home_jp[$i][$j]['title'] == '不如帰 大乱'){
+                if($data_home_jp[$i][$j]['title'] == '不如帰 大乱'){
 //                    echo '$merge[\'title\']:'.$merge['title'].'<br>';
-//                    echo '$money[1]game]:'.$money['1']['game'].'<br>';
+//                    echo '$money[1][game]:'.$money['1']['game'].'<br>';
 //                    echo '$merge[\'1\'][\'game_en\']:'.$merge['1']['game_en'].'<br>';
-//                }
+                    if($merge['title'] == 'Absurdity turbulence'){
+                        $nintendo_jp['title'] = $data_home_jp[$i][$j]['title'];
+                        $nintendo_jp['iurl'] = 'https://img-eshop.cdn.nintendo.net/i/'.$data_home_jp[$i][$j]['iurl'].'.jpg?w=284';
+                        array_push($merge, $nintendo_jp);
+                        $save_1 = "1";
+                        echo '客製化'.$merge[2]['title'].'完成'.'<br>';
+                        break;
+                    }
+
+                }
 
                 if((count(explode(strtoupper($merge['1']['game_en']), strtoupper($data_home_jp[$i][$j]['title']))) > 1)){
 
@@ -53,7 +62,7 @@ if($data_1 && $data_2){
                     $nintendo_jp['title'] = $data_home_jp[$i][$j]['title'];
                     $nintendo_jp['iurl'] = 'https://img-eshop.cdn.nintendo.net/i/'.$data_home_jp[$i][$j]['iurl'].'.jpg?w=284';
                     array_push($merge, $nintendo_jp);
-
+                    $save_1 = "1";
                     break;
                 }else{
 
@@ -65,6 +74,9 @@ if($data_1 && $data_2){
 
             }
 
+            if($save_1 == "1"){
+                break;
+            }
 
         }
 //        echo '$money[2][\'title\']:'.$merge[2]['title'].'<br>';
