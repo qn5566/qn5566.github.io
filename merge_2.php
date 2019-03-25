@@ -96,7 +96,7 @@ if($data_1 && $data_2){
 
         }
 //        echo '$money[2][\'title\']:'.$merge[2]['title'].'<br>';
-        echo '$data 數量:'.count($data).'<br>';
+//        echo '$data 數量:'.count($data).'<br>';
             array_push($data, $merge);
 
 
