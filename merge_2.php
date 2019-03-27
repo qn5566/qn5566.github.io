@@ -53,12 +53,41 @@ if($data_1 && $data_2){
 
                 }
 
-
                 if($data_home_jp[$i][$j]['title'] == 'ラピス・リ・アビス'){
-//                    echo '$merge[\'title\']:'.$merge['title'].'<br>';
-//                    echo '$money[1][game]:'.$money['1']['game'].'<br>';
-//                    echo '$merge[\'1\'][\'game_en\']:'.$merge['1']['game_en'].'<br>';
                     if($merge['title'] == 'Lapis · Li · Abyss'){
+                        $nintendo_jp['title'] = $data_home_jp[$i][$j]['title'];
+                        $nintendo_jp['iurl'] = 'https://img-eshop.cdn.nintendo.net/i/'.$data_home_jp[$i][$j]['iurl'].'.jpg?w=284';
+                        array_push($merge, $nintendo_jp);
+                        $save_1 = "1";
+                        echo '客製化'.$merge[2]['title'].'完成'.'<br>';
+                        break;
+                    }
+
+                }
+                if($data_home_jp[$i][$j]['title'] == 'ノラと皇女と野良猫ハート2'){
+                    if($merge['title'] == 'Nora and Princess and Stray Cat Heart 2'){
+                        $nintendo_jp['title'] = $data_home_jp[$i][$j]['title'];
+                        $nintendo_jp['iurl'] = 'https://img-eshop.cdn.nintendo.net/i/'.$data_home_jp[$i][$j]['iurl'].'.jpg?w=284';
+                        array_push($merge, $nintendo_jp);
+                        $save_1 = "1";
+                        echo '客製化'.$merge[2]['title'].'完成'.'<br>';
+                        break;
+                    }
+
+                }
+                if($data_home_jp[$i][$j]['title'] == 'ノラと皇女と野良猫ハート HD'){
+                    if($merge['title'] == 'Nora and the Princess and the Stray Cat Heart HD'){
+                        $nintendo_jp['title'] = $data_home_jp[$i][$j]['title'];
+                        $nintendo_jp['iurl'] = 'https://img-eshop.cdn.nintendo.net/i/'.$data_home_jp[$i][$j]['iurl'].'.jpg?w=284';
+                        array_push($merge, $nintendo_jp);
+                        $save_1 = "1";
+                        echo '客製化'.$merge[2]['title'].'完成'.'<br>';
+                        break;
+                    }
+
+                }
+                if($data_home_jp[$i][$j]['title'] == 'NORN9 LOFN for Nintendo Switch '){
+                    if($merge['title'] == 'Nora and the Princess and the Stray Cat Heart HD'){
                         $nintendo_jp['title'] = $data_home_jp[$i][$j]['title'];
                         $nintendo_jp['iurl'] = 'https://img-eshop.cdn.nintendo.net/i/'.$data_home_jp[$i][$j]['iurl'].'.jpg?w=284';
                         array_push($merge, $nintendo_jp);
