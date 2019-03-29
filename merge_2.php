@@ -108,6 +108,61 @@ if($data_1 && $data_2){
                     }
 
                 }
+                if($data_home_jp[$i][$j]['title'] == '無双OROCHI２ Ultimate'){
+                    if($merge['title'] == 'Musou Orochi 2 Ultimate'){
+                        $nintendo_jp['title'] = $data_home_jp[$i][$j]['title'];
+                        $nintendo_jp['iurl'] = 'https://img-eshop.cdn.nintendo.net/i/'.$data_home_jp[$i][$j]['iurl'].'.jpg?w=284';
+                        array_push($merge, $nintendo_jp);
+                        $save_1 = "1";
+                        echo '客製化'.$merge[2]['title'].'完成'.'<br>';
+                        break;
+                    }
+
+                }
+                if($data_home_jp[$i][$j]['title'] == 'BLAZBLUE CROSS TAG BATTLE 特別体験版'){
+                    if($merge['title'] == 'BLAZBLUE CROSS TAG BATTLE special trial version'){
+                        $nintendo_jp['title'] = $data_home_jp[$i][$j]['title'];
+                        $nintendo_jp['iurl'] = 'https://img-eshop.cdn.nintendo.net/i/'.$data_home_jp[$i][$j]['iurl'].'.jpg?w=284';
+                        array_push($merge, $nintendo_jp);
+                        $save_1 = "1";
+                        echo '客製化'.$merge[2]['title'].'完成'.'<br>';
+                        break;
+                    }
+
+                }
+                if($data_home_jp[$i][$j]['title'] == '刑事J.B.ハロルドの事件簿　マンハッタン・レクイエム'){
+                    if($merge['title'] == 'Keiji J.B. Harold no Jikenbo: Manhattan Requiem'){
+                        $nintendo_jp['title'] = $data_home_jp[$i][$j]['title'];
+                        $nintendo_jp['iurl'] = 'https://img-eshop.cdn.nintendo.net/i/'.$data_home_jp[$i][$j]['iurl'].'.jpg?w=284';
+                        array_push($merge, $nintendo_jp);
+                        $save_1 = "1";
+                        echo '客製化'.$merge[2]['title'].'完成'.'<br>';
+                        break;
+                    }
+
+                }
+                if($data_home_jp[$i][$j]['title'] == '刑事J.B.ハロルドの事件簿　マーダー・クラブ'){
+                    if($merge['title'] == 'Keiji J.B. Harold no Jikenbo: Satsujin Club'){
+                        $nintendo_jp['title'] = $data_home_jp[$i][$j]['title'];
+                        $nintendo_jp['iurl'] = 'https://img-eshop.cdn.nintendo.net/i/'.$data_home_jp[$i][$j]['iurl'].'.jpg?w=284';
+                        array_push($merge, $nintendo_jp);
+                        $save_1 = "1";
+                        echo '客製化'.$merge[2]['title'].'完成'.'<br>';
+                        break;
+                    }
+
+                }
+                if($data_home_jp[$i][$j]['title'] == 'LITTLE FRIENDS -DOGS & CATS-（リトルフレンズ　ドッグス＆キャッツ）'){
+                    if($merge['title'] == 'LITTLE FRIENDS - DOGS & CATS - (Little Friends Dogs & Cats)'){
+                        $nintendo_jp['title'] = $data_home_jp[$i][$j]['title'];
+                        $nintendo_jp['iurl'] = 'https://img-eshop.cdn.nintendo.net/i/'.$data_home_jp[$i][$j]['iurl'].'.jpg?w=284';
+                        array_push($merge, $nintendo_jp);
+                        $save_1 = "1";
+                        echo '客製化'.$merge[2]['title'].'完成'.'<br>';
+                        break;
+                    }
+
+                }
 
                 if((count(explode(strtoupper($merge['1']['game_en']), strtoupper($data_home_jp[$i][$j]['title']))) > 1)){
 
