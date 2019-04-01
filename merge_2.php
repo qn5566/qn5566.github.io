@@ -163,6 +163,19 @@ if($data_1 && $data_2){
                     }
 
                 }
+                if($data_home_jp[$i][$j]['title'] == '超・逃走中＆超・戦闘中　ダブルパック'){
+                    if($merge['title'] == 'Ultra-Fleeing & Super Battle Double Pack'){
+                        $nintendo_jp['title'] = $data_home_jp[$i][$j]['title'];
+                        $nintendo_jp['iurl'] = 'https://img-eshop.cdn.nintendo.net/i/'.$data_home_jp[$i][$j]['iurl'].'.jpg?w=284';
+                        array_push($merge, $nintendo_jp);
+                        $save_1 = "1";
+                        echo '客製化'.$merge[2]['title'].'完成'.'<br>';
+                        break;
+                    }
+
+                }
+
+
 
                 if((count(explode(strtoupper($merge['1']['game_en']), strtoupper($data_home_jp[$i][$j]['title']))) > 1)){
 
