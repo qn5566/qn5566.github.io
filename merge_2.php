@@ -174,8 +174,28 @@ if($data_1 && $data_2){
                     }
 
                 }
+                if($data_home_jp[$i][$j]['title'] == 'リアルタイムバトル将棋'){
+                    if($merge['title'] == 'Real Time Battle Shogi'){
+                        $nintendo_jp['title'] = $data_home_jp[$i][$j]['title'];
+                        $nintendo_jp['iurl'] = 'https://img-eshop.cdn.nintendo.net/i/'.$data_home_jp[$i][$j]['iurl'].'.jpg?w=284';
+                        array_push($merge, $nintendo_jp);
+                        $save_1 = "1";
+                        echo '客製化'.$merge[2]['title'].'完成'.'<br>';
+                        break;
+                    }
 
+                }
+                if($data_home_jp[$i][$j]['title'] == '√Letter ルートレター Last Answer'){
+                    if($merge['title'] == '√ Letter Route letter Last Answer'){
+                        $nintendo_jp['title'] = $data_home_jp[$i][$j]['title'];
+                        $nintendo_jp['iurl'] = 'https://img-eshop.cdn.nintendo.net/i/'.$data_home_jp[$i][$j]['iurl'].'.jpg?w=284';
+                        array_push($merge, $nintendo_jp);
+                        $save_1 = "1";
+                        echo '客製化'.$merge[2]['title'].'完成'.'<br>';
+                        break;
+                    }
 
+                }
 
                 if((count(explode(strtoupper($merge['1']['game_en']), strtoupper($data_home_jp[$i][$j]['title']))) > 1)){
 
