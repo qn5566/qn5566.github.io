@@ -1,1 +1,1 @@
-{"version":"27","info":"1.修正一些Bug","info_2":"\nHello~\n大家留言的需求我都有收到喔\n如果覺得不錯的話\n可以幫我點擊一下廣告～給我賺一些熬夜咖啡錢XD\n我會再繼續加油的！\n有問題或是合作工作之類的\n歡迎寄信給我喔!!\nemail : kiillomg@gmail.com\n"}
+{"version":"20","info":"1.修正一些Bug","info_2":"\nHello~\n大家留言的需求我都有收到喔\n如果覺得不錯的話\n可以幫我點擊一下廣告～給我賺一些熬夜咖啡錢XD\n我會再繼續加油的！\n有問題或是合作工作之類的\n歡迎寄信給我喔!!\nemail : kiillomg@gmail.com\n"}
