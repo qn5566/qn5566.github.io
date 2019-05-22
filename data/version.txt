@@ -1,1 +1,1 @@
-{"version":"30","info":"1.新增資料來源~\n2.圖片更完善\n3.請各位在幫我打打分數\n4.進度會慢慢補上來的XD\n先謝謝各位拉~","info_2":"\nHello~\n目前APP改版換成另外一個摟！\n請搜尋一下\nSwitch e-Shop 比價神器 (非官方)\n最近一直在開發iOS版本\n之後我會補上大家的願望\n有空再幫我打星星摟!!\nemail : kiillomg@gmail.com\n"}
+{"version":"31","info":"1.新增資料來源~\n2.圖片更完善\n3.請各位在幫我打打分數\n4.進度會慢慢補上來的XD\n先謝謝各位拉~","info_2":"\nHello~\n目前APP改版換成另外一個摟！\n請搜尋一下\nSwitch e-Shop 比價神器 (非官方)\n最近一直在開發iOS版本\n之後我會補上大家的願望\n有空再幫我打星星摟!!\nemail : kiillomg@gmail.com\n"}
