@@ -1,1 +1,1 @@
-{"version":"1","info":"更新通知!!\n1.新增資料來源~\n2.圖片更完善\n3.請各位在幫我打打分數\n4.進度會慢慢補上來的XD\n先謝謝各位拉~","info_2":"\nHello~\niOS app終於上線了！\n之後再統整大家的需求再慢慢新增資料喔！\n有空再幫我打星星摟!!\nemail : kiillomg@gmail.com\n"}
+{"version":"1","info":"更新通知!!\n1.新增資料來源~\n2.圖片更完善\n3.請各位在幫我打打分數\n4.進度會慢慢補上來的XD\n先謝謝各位拉~","info_2":"\nHello~\niOS app終於上線了！\n之後再統整大家的需求再慢慢新增資料喔！\n有空再幫我打星星摟!!\nemail : kiillomg@gmail.com\n","url":"https://apps.apple.com/app/id1470342645"}
