@@ -1,1 +1,1 @@
-{"version":"15","updata_time":"PM 1:00","info":"更新通知!!\n1.介面優化改版\n2.新增歷史最低價位資訊\n3.增加商城直購連結\n4.會員系統\n5.警喜小彩蛋","info_2":"\nHello~\n這也有Android版喔!!有需要的朋友口耳相傳一下\nGoogle Store 搜尋:NS Switch 應該就會有了喔!\n有空再幫我打星星摟!!\nemail : kiillomg@gmail.com\n","url":"https://apps.apple.com/app/id1470342645"}
+{"version":"15","updata_time":"PM 1:00","info":"更新通知!!\n1.介面優化改版\n2.新增歷史最低價位資訊\n3.增加商城直購連結\n4.會員系統\n5.驚喜小彩蛋","info_2":"\nHello~\n這也有Android版喔!!有需要的朋友口耳相傳一下\nGoogle Store 搜尋:NS Switch 應該就會有了喔!\n有空再幫我打星星摟!!\nemail : kiillomg@gmail.com\n","url":"https://apps.apple.com/app/id1470342645"}
