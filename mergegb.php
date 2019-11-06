@@ -57,7 +57,7 @@ if($data_1 && $data_2 && $data_3){
 
             for($j=0;$j < count($data_home[$i]);$j++){
 
-                if($money['enTitle'] == 'Yōdanji'){
+                if(in_array('Yōdanji',array($money['enTitle'],$money['enTitle'],$money['enTitle']))){
 //                    echo '客製化:'.$money['enTitle'].'加入空值'.'<br>'.$data_home[$i][$j]['title'].'<br>';
                     if($data_home[$i][$j]['title'] == 'Y&#333;danji'){
                         $nintendo_en['release_date'] = $data_home[$i][$j]['release_date'];
