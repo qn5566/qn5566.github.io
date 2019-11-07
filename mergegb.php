@@ -57,7 +57,7 @@ if($data_1 && $data_2 && $data_3){
 
             for($j=0;$j < count($data_home[$i]);$j++){
 
-                if(in_array('Yōdanji',array($money['enTitle'],$money['enTitle'],$money['enTitle']))){
+                if(in_array('Yōdanji',array($money['enTitle'],$money['twTitle'],$money['jpTitle']))){
 //                    echo '客製化:'.$money['enTitle'].'加入空值'.'<br>'.$data_home[$i][$j]['title'].'<br>';
                     if($data_home[$i][$j]['title'] == 'Y&#333;danji'){
                         $nintendo_en['release_date'] = $data_home[$i][$j]['release_date'];
@@ -69,7 +69,7 @@ if($data_1 && $data_2 && $data_3){
                         break;
                     }
                 }
-                if($money['enTitle'] == 'Starlink: Battle for Atlas - Deluxe edition'){
+                if(in_array('Starlink: Battle for Atlas - Deluxe edition',array($money['enTitle'],$money['twTitle'],$money['jpTitle']))){
 //                    echo '客製化:'.$money['enTitle'].'加入空值'.'<br>'.$data_home[$i][$j]['title'].'<br>';
                     if($data_home[$i][$j]['title'] == 'Starlink: Battle for Atlas Deluxe Edition'){
                         $nintendo_en['release_date'] = $data_home[$i][$j]['release_date'];
@@ -81,7 +81,7 @@ if($data_1 && $data_2 && $data_3){
                         break;
                     }
                 }
-                if($money['enTitle'] == 'GUILTY GEAR XX ACCENT CORE PLUS R'){
+                if(in_array('GUILTY GEAR XX ACCENT CORE PLUS R',array($money['enTitle'],$money['twTitle'],$money['jpTitle']))){
 //                    echo '客製化:'.$money['enTitle'].'加入空值'.'<br>'.$data_home[$i][$j]['title'].'<br>';
                     if($data_home[$i][$j]['title'] == 'GUILTY GEAR XX ACCENT CORE PLUS R'){
                         $nintendo_en['release_date'] = '2019年5月16日';
@@ -93,7 +93,7 @@ if($data_1 && $data_2 && $data_3){
                         break;
                     }
                 }
-                if($money['enTitle'] == 'GUILTY GEAR'){
+                if(in_array('GUILTY GEAR',array($money['enTitle'],$money['twTitle'],$money['jpTitle']))){
 //                    echo '客製化:'.$money['enTitle'].'加入空值'.'<br>'.$data_home[$i][$j]['title'].'<br>';
                     if($data_home[$i][$j]['title'] == 'GUILTY GEAR'){
                         $nintendo_en['release_date'] = '2019年5月16日';
@@ -156,9 +156,7 @@ if($data_1 && $data_2 && $data_3){
 //                }
 
 
-
-                if ($money['enTitle'] == $data_home[$i][$j]['title']) {
-
+                if(in_array($data_home[$i][$j]['title'],array($money['enTitle'],$money['twTitle'],$money['jpTitle']))){
 //                    echo '$money[enTitle]:'.$money['enTitle'].'<br>';
 //                    echo 'game $data_home:'.$data_home[$i][$j]['title'].' conut'.count(explode(strtoupper($money['enTitle']), strtoupper($data_home[$i][$j]['title']))).'<br>';
                     $nintendo_en['release_date'] = $data_home[$i][$j]['release_date'];
@@ -199,7 +197,7 @@ if($data_1 && $data_2 && $data_3){
 //            echo '$money[enTitle]:' . strtoupper($money['enTitle']) . '<br>';
 //            echo '$data_wiki[game_en]:' . strtoupper($data_wiki[$i]['game_en']) . '<br>';
 //            echo '$data_wiki[game]:' . strtoupper($data_wiki[$i]['game']) . '<br>';
-            if($money['enTitle'] == 'Abyss'){
+            if(in_array('Abyss',array($money['enTitle'],$money['twTitle'],$money['jpTitle']))){
 //            echo '客製化:'.$money['enTitle'].'加入空值'.'<br>'.$data_wiki[$i]['game'].'<br>';
                 if($data_wiki[$i]['game'] == 'Abyss'){
                     array_push($money, $data_wiki[$i]);
@@ -213,8 +211,7 @@ if($data_1 && $data_2 && $data_3){
                     break;
                 }
             }
-
-            if($money['enTitle'] == 'Super Mario Maker 2'){
+            if(in_array('Super Mario Maker 2',array($money['enTitle'],$money['enTitle'],$money['enTitle']))){
 //            echo '客製化:'.$money['enTitle'].'加入空值'.'<br>'.$data_wiki[$i]['game'].'<br>';
                 if($data_wiki[$i]['game'] == '超級瑪利歐創作家2スーパーマリオメーカー2Super Mario Maker 2(瑪利歐製造2)'){
                     array_push($money, $data_wiki[$i]);
@@ -226,6 +223,10 @@ if($data_1 && $data_2 && $data_3){
 
             if ((count(explode(strtoupper($money['enTitle']), strtoupper($data_wiki[$i]['game_en']))) > 1) ||
                 (count(explode(strtoupper($money['enTitle']), strtoupper($data_wiki[$i]['game']))) > 1) ||
+                (count(explode(strtoupper($money['twTitle']), strtoupper($data_wiki[$i]['game_en']))) > 1) ||
+                (count(explode(strtoupper($money['twTitle']), strtoupper($data_wiki[$i]['game']))) > 1) ||
+                (count(explode(strtoupper($money['jpTitle']), strtoupper($data_wiki[$i]['game_en']))) > 1) ||
+                (count(explode(strtoupper($money['jpTitle']), strtoupper($data_wiki[$i]['game']))) > 1) ||
                 in_array(trim($money['enTitle']),$ex_name)) {
 //                echo 'game_en:' . $data_wiki[$i]['game_en'] . ' conut' . count(explode(strtoupper($money['enTitle']), strtoupper($data_wiki[$i]['game_en']))) . '<br>';
 //                echo 'game $data_wiki:' . $data_wiki[$i]['game'] . ' conut' . count(explode(strtoupper($money['enTitle']), strtoupper($data_wiki[$i]['game']))) . '<br>';
