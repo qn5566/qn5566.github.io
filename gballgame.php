@@ -33,10 +33,53 @@ for ($i = 2; $i <= $tot_page; $i++) {
 
         if ($data_T['id']=='5c7a45380d876d4d8528806e') {
 
-            $data_T['imgUrl'] = 'https://images.eshop-prices.com/resize?f=jpeg&h=240&url=https%3A%2F%2Fimg-eshop.cdn.nintendo.net%2Fi%2F2bd3db9042d9afd324fa2ba26d8fb1ac5a11c3a1758c7f705e8bdf789374c151.jpg';
+            $data_T['imgUrl'] = 'https://img.ruten.com.tw/s1/a/44/3d/21847035569213_701.jpg';
             echo '修正 id'.$data_T['id']. "<br>\n";
             echo '修正 enTitle'.$data_T['enTitle']. "<br>\n";
         }
+
+        if ($data_T['id']=='5c7a45380d876d4d85288020') {
+
+            $data_T['imgUrl'] = 'https://www.nintendo.com/content/dam/noa/en_US/games/switch/d/dragon-ball-z-super-butoden-switch/Switch_DRAGONBALLZ-SuperButoden_box_eShop.png/_jcr_content/renditions/cq5dam.thumbnail.319.319.png';
+            echo '修正 id'.$data_T['id']. "<br>\n";
+            echo '修正 enTitle'.$data_T['enTitle']. "<br>\n";
+        }
+
+        if ($data_T['id']=='5c7a45370d876d4d8528680e') {
+
+            $data_T['imgUrl'] = 'https://www.nintendo.com/content/dam/noa/en_US/games/switch/a/americas-greatest-game-shows-wheel-of-fortune-and-jeopardy-switch/Switch_AmericasGreatest-WheelJeopardy_box.png/_jcr_content/renditions/cq5dam.thumbnail.319.319.png';
+            $data_T['minPriceCountryCode'] = 'US';
+            echo '修正 id'.$data_T['id']. "<br>\n";
+            echo '修正 enTitle'.$data_T['enTitle']. "<br>\n";
+        }
+
+        if ($data_T['id']=='5c7a45390d876d4d8528c1a2') {
+
+            $data_T['imgUrl'] = 'https://www.nintendo.com/content/dam/noa/en_US/games/switch/s/steven-universe-save-the-light-and-ok-k-o-lets-play-heroes-combo-switch/Switch_StevenUniverseOKKOCombo_box.png/_jcr_content/renditions/cq5dam.thumbnail.319.319.png';
+            $data_T['minPriceCountryCode'] = 'US';
+            echo '修正 id'.$data_T['id']. "<br>\n";
+            echo '修正 enTitle'.$data_T['enTitle']. "<br>\n";
+        }
+
+        if ($data_T['id']=='5c7a453a0d876d4d85291ae8') {
+
+            $data_T['imgUrl'] = 'https://www.nintendo.com/content/dam/noa/en_US/games/switch/m/minecraft-switch/Switch_Minecraft_box.png/_jcr_content/renditions/cq5dam.thumbnail.319.319.png';
+            $data_T['minPriceCountryCode'] = 'US';
+            $data_T['enTitle'] = 'Minecraft: Story Mode - 試玩版';
+            echo '修正 id'.$data_T['id']. "<br>\n";
+            echo '修正 enTitle'.$data_T['enTitle']. "<br>\n";
+        }
+
+        if ($data_T['id']=='5c7a453b0d876d4d85293b82') {
+
+            $data_T['imgUrl'] = 'https://images.eshop-prices.com/resize?f=webp&h=480&url=https%3A%2F%2Fcdn01.nintendo-europe.com%2Fmedia%2Fimages%2F08_content_images%2Fgames_6%2Fnintendo_switch_7%2Fnswitch_starlinkbattleforatlas%2FCI_NSwitch_StarlinkBattleForAtlas_Deluxe_image950w.jpg&w=480';
+            $data_T['minPriceCountryCode'] = 'US';
+            $data_T['enTitle'] = '銀河聯軍：阿特拉斯之戰 - 試玩版';
+            echo '修正 id'.$data_T['id']. "<br>\n";
+            echo '修正 enTitle'.$data_T['enTitle']. "<br>\n";
+        }
+
+
         array_push($gbGame['games'], $data_T);
     }
 
