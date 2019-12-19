@@ -7,7 +7,7 @@
  */
 ini_set("display_errors", 1);
 ini_set('memory_limit', '-1');
-$dir = '/Users/ftn_scott/Documents/GitHub/qn5566.github.io/data/gballgame_test.txt';
+$dir = '/Users/ftn_scott/Documents/GitHub/qn5566.github.io/data/gballgame.txt';
 $url = 'http://ws.gamebox.cool/graphql';
 
 $data_1 = GetData(1, $url);
@@ -36,13 +36,12 @@ for ($i = 2; $i <= $tot_page; $i++) {
             $data_T['imgUrl'] = 'https://images.eshop-prices.com/resize?f=jpeg&h=240&url=https%3A%2F%2Fimg-eshop.cdn.nintendo.net%2Fi%2F2bd3db9042d9afd324fa2ba26d8fb1ac5a11c3a1758c7f705e8bdf789374c151.jpg';
             echo '修正 id'.$data_T['id']. "<br>\n";
             echo '修正 enTitle'.$data_T['enTitle']. "<br>\n";
-            break;
         }
-
+        array_push($gbGame['games'], $data_T);
     }
 
 
-    array_push($gbGame['games'], $data_T);
+
 
 
 //    $gbGame['games'] = $gbGame['games'].','.$data_1['data']['searchGames']['games'];
