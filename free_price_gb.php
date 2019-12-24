@@ -30,6 +30,39 @@ if($data_1){
 
         if(is_null($merge['minTWPrice'])){
 
+
+            if ($merge['id']=='5c7a45380d876d4d8528806e') {
+
+//                $data_T['imgUrl'] = 'https://img.ruten.com.tw/s1/a/44/3d/21847035569213_701.jpg';
+                echo '修正 id'.$merge['id']. "<br>\n";
+                echo '修正 enTitle'.$merge['enTitle']. "<br>\n";
+                echo '沒有免費 刪除'. "<br>\n";
+                continue;
+
+            }
+
+            if ($merge['id']=='5c7a453a0d876d4d85291ae8') {
+
+//                $data_T['imgUrl'] = 'https://img.ruten.com.tw/s1/a/44/3d/21847035569213_701.jpg';
+                echo '修正 id'.$merge['id']. "<br>\n";
+                echo '修正 enTitle'.$merge['enTitle']. "<br>\n";
+                echo '沒有免費 刪除'. "<br>\n";
+                continue;
+
+            }
+
+            if ($merge['id']=='5c7a453c0d876d4d85299564') {
+
+//                $data_T['imgUrl'] = 'https://img.ruten.com.tw/s1/a/44/3d/21847035569213_701.jpg';
+                echo '修正 id'.$merge['id']. "<br>\n";
+                echo '修正 enTitle'.$merge['enTitle']. "<br>\n";
+                echo '沒有免費 刪除'. "<br>\n";
+                continue;
+
+            }
+
+
+
             array_push($data, $merge);
 //            break;
 

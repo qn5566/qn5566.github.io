@@ -65,7 +65,7 @@ for ($i = 2; $i <= $tot_page; $i++) {
 
             $data_T['imgUrl'] = 'https://www.nintendo.com/content/dam/noa/en_US/games/switch/m/minecraft-switch/Switch_Minecraft_box.png/_jcr_content/renditions/cq5dam.thumbnail.319.319.png';
             $data_T['minPriceCountryCode'] = 'US';
-            $data_T['enTitle'] = 'Minecraft: Story Mode - 試玩版';
+//            $data_T['twTitle'] = 'Minecraft: Story Mode - 試玩版';
             echo '修正 id'.$data_T['id']. "<br>\n";
             echo '修正 enTitle'.$data_T['enTitle']. "<br>\n";
         }
@@ -74,11 +74,29 @@ for ($i = 2; $i <= $tot_page; $i++) {
 
             $data_T['imgUrl'] = 'https://images.eshop-prices.com/resize?f=webp&h=480&url=https%3A%2F%2Fcdn01.nintendo-europe.com%2Fmedia%2Fimages%2F08_content_images%2Fgames_6%2Fnintendo_switch_7%2Fnswitch_starlinkbattleforatlas%2FCI_NSwitch_StarlinkBattleForAtlas_Deluxe_image950w.jpg&w=480';
             $data_T['minPriceCountryCode'] = 'US';
-            $data_T['enTitle'] = '銀河聯軍：阿特拉斯之戰 - 試玩版';
+            $data_T['twTitle'] = '銀河聯軍：阿特拉斯之戰 - 試玩版';
             echo '修正 id'.$data_T['id']. "<br>\n";
             echo '修正 enTitle'.$data_T['enTitle']. "<br>\n";
         }
 
+
+        if ($data_T['id']=='5c7a453c0d876d4d8529614a') {
+
+//            $data_T['imgUrl'] = 'https://images.eshop-prices.com/resize?f=webp&h=480&url=https%3A%2F%2Fcdn01.nintendo-europe.com%2Fmedia%2Fimages%2F08_content_images%2Fgames_6%2Fnintendo_switch_7%2Fnswitch_starlinkbattleforatlas%2FCI_NSwitch_StarlinkBattleForAtlas_Deluxe_image950w.jpg&w=480';
+//            $data_T['minPriceCountryCode'] = 'US';
+            $data_T['twTitle'] = '傳說對決 Switch版';
+            echo '修正 id'.$data_T['id']. "<br>\n";
+            echo '修正 enTitle'.$data_T['enTitle']. "<br>\n";
+        }
+
+        if ($data_T['id']=='5c7a453c0d876d4d85299564') {
+
+            $data_T['imgUrl'] = 'https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/thumb/7/76/MCSMS2AppIcon.png/300px-MCSMS2AppIcon.png?version=9f93df3689ad43eb46b6ee439a00ddf1%201.5x,%20https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/thumb/7/76/MCSMS2AppIcon.png/400px-MCSMS2AppIcon.png?version=9f93df3689ad43eb46b6ee439a00ddf1%202x';
+//            $data_T['minPriceCountryCode'] = 'US';
+//            $data_T['twTitle'] = '傳說對決 Switch版';
+            echo '修正 id'.$data_T['id']. "<br>\n";
+            echo '修正 enTitle'.$data_T['enTitle']. "<br>\n";
+        }
 
         array_push($gbGame['games'], $data_T);
     }
