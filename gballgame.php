@@ -98,6 +98,16 @@ for ($i = 2; $i <= $tot_page; $i++) {
             echo '修正 enTitle'.$data_T['enTitle']. "<br>\n";
         }
 
+
+        if ($data_T['id']=='5c7a453a0d876d4d85290b10') {
+
+            $data_T['imgUrl'] = 'https:\/\/www.nintendo.com\/content\/dam\/noa\/en_US\/games\/switch\/h\/hulu-switch\/Switch_Hulu_box_eShopv2.png\/_jcr_content\/renditions\/cq5dam.thumbnail.319.319.png';
+//            $data_T['minPriceCountryCode'] = 'US';
+//            $data_T['twTitle'] = '傳說對決 Switch版';
+            echo '修正 id'.$data_T['id']. "<br>\n";
+            echo '修正 enTitle'.$data_T['enTitle']. "<br>\n";
+        }
+
         array_push($gbGame['games'], $data_T);
     }
 
