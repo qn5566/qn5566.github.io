@@ -98,6 +98,15 @@ for ($i = 2; $i <= $tot_page; $i++) {
             echo '修正 enTitle'.$data_T['enTitle']. "<br>\n";
         }
 
+        if ($data_T['id']=='5c7a453d0d876d4d852999a8') {
+
+            $data_T['minTWPrice'] = '2688';
+//            $data_T['minPriceCountryCode'] = 'US';
+//            $data_T['twTitle'] = '傳說對決 Switch版';
+            echo '修正 id'.$data_T['id']. "<br>\n";
+            echo '修正 enTitle'.$data_T['enTitle']. "<br>\n";
+        }
+
 
         if ($data_T['id']=='5c7a453a0d876d4d85290b10') {
 
