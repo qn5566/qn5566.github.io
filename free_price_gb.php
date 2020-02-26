@@ -7,9 +7,9 @@
  */
 //ini_set("display_errors", 1);
 ini_set('memory_limit', '-1');
-$dir = '/Users/Ted/Documents/GitHub/qn5566.github.io/data/free_price_gb.txt';
+$dir = '/Users/ftn_scott/Documents/GitHub/qn5566.github.io/data/free_price_gb.txt';
 //$dir_merge = '/Users/hey_j/Documents/GitHub/qn5566.github.io/data/merge_data.txt';
-$dir_merge = '/Users/Ted/Documents/GitHub/qn5566.github.io/data/mergegb_data_3.txt';
+$dir_merge = '/Users/ftn_scott/Documents/GitHub/qn5566.github.io/data/mergegb_data_3.txt';
 
 $data_1 = file_get_contents($dir_merge);
 if(!$data_1){

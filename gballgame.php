@@ -7,7 +7,7 @@
  */
 ini_set("display_errors", 1);
 ini_set('memory_limit', '-1');
-$dir = '/Users/Ted/Documents/GitHub/qn5566.github.io/data/gballgame.txt';
+$dir = '/Users/ftn_scott/Documents/GitHub/qn5566.github.io/data/gballgame.txt';
 $url = 'http://ws.gamebox.cool/graphql';
 
 $data_1 = GetData(1, $url);

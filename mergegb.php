@@ -7,11 +7,11 @@
  */
 //ini_set("display_errors", 1);
 ini_set('memory_limit', '-1');
-$dir = '/Users/Ted/Documents/GitHub/qn5566.github.io/data/mergegb_data.txt';
-$dir_money = '/Users/Ted/Documents/GitHub/qn5566.github.io/data/gballgame.txt';
-$dir_wiki = '/Users/Ted/Documents/GitHub/qn5566.github.io/data/wiki_data.txt';
-$dir_home = '/Users/Ted/Documents/GitHub/qn5566.github.io/data/nintendo_home.txt';
-//$dir_home_jp = '/Users/Ted/Documents/GitHub/qn5566.github.io/data/nintendo_home_jp.txt';
+$dir = '/Users/ftn_scott/Documents/GitHub/qn5566.github.io/data/mergegb_data.txt';
+$dir_money = '/Users/ftn_scott/Documents/GitHub/qn5566.github.io/data/gballgame.txt';
+$dir_wiki = '/Users/ftn_scott/Documents/GitHub/qn5566.github.io/data/wiki_data.txt';
+$dir_home = '/Users/ftn_scott/Documents/GitHub/qn5566.github.io/data/nintendo_home.txt';
+//$dir_home_jp = '/Users/ftn_scott/Documents/GitHub/qn5566.github.io/data/nintendo_home_jp.txt';
 
 $data_1 = file_get_contents($dir_money);
 $data_2 = file_get_contents($dir_wiki);
